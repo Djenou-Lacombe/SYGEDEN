@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="SysEden.Vue.AdminMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Eglise EDEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../assets/img/kaiadmin/logo EDEN.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+
+<body>
+<form id="form1" runat="server">
+
+<div class="wrapper">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+            <div class="logo-header" data-background-color="dark">
+                <a href="AccueilAdmin.aspx" class="logo">
+                    <img src="../assets/img/kaiadmin/logo EDEN.png"
+                         alt="EDEN"
+                         class="navbar-brand"
+                         height="80" />
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar-wrapper scrollbar-inner">
+            <ul class="nav nav-secondary">
+
+                <li class="nav-item active">
+                    <a href="AccueilAdmin.aspx">
+                        <i class="fas fa-home"></i>
+                        <p>Accueil</p>
+                    </a>
+                </li>
+
+                <li class="nav-section">
+                    <h4 class="text-section">Gestion EDEN</h4>
+                </li>
+
+                <!-- Pasteurs -->
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#pasteurMenu">
+                        <i class="fas fa-layer-group"></i>
+                        <p>Pasteurs</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="pasteurMenu">
+                        <ul class="nav nav-collapse">
+                            <li><a href="FormeEnregistrerPasteur.aspx">Enregistrer Pasteur</a></li>
+                            <li><a href="ListePasteur.aspx">Lister Pasteur</a></li>
+                             <li><a href="RecherchePasteur.aspx">Rechercher Pasteur</a></li>
+                            <li><a href="RapportPasteur.aspx">Rapport</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Membres -->
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#membreMenu">
+                        <i class="fas fa-users"></i>
+                        <p>Membres</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="membreMenu">
+                        <ul class="nav nav-collapse">
+                            <li><a href="FormeEnregistrerMembre.aspx">Enregistrer Membre</a></li>
+                            <li><a href="ListeMembre.aspx">Lister Membre</a></li>
+                            <li><a href="RechercheMembre.aspx">Rechercher Membre</a></li>
+                            <li><a href="RapportMembre.aspx">Rapport Membre</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Logout -->
+                <li class="nav-item">
+                    <a href="Logout.aspx">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <p>Déconnexion</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN PANEL -->
+    <div class="main-panel">
+
+        <!-- TOPBAR -->
+        <nav class="navbar navbar-header navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+
+                <div class="navbar-form nav-search d-none d-lg-flex">
+                    <asp:TextBox ID="txtSearch"
+                        runat="server"
+                        CssClass="form-control"
+                        Placeholder="Recherche..." />
+                </div>
+
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#">
+                            <span class="fw-bold">Admin</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a class="dropdown-item" href="Logout.aspx">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- END TOPBAR -->
+
+        <!-- CONTENT -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+
+    </div>
+    <!-- END MAIN PANEL -->
+
+</div>
+</form>
+
+<!-- JS -->
+<script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+<script src="../assets/js/core/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+<script src="../assets/js/kaiadmin.min.js"></script>
+
+<!-- Fonts -->
+<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+<script>
+WebFont.load({
+    google: { families: ["Public Sans:300,400,500,600,700"] },
+    custom: {
+        families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons"
+        ],
+        urls: ["../assets/css/fonts.min.css"]
+    },
+    active: function () {
+        sessionStorage.fonts = true;
+    }
+});
+</script>
+
+</body>
+</html>
