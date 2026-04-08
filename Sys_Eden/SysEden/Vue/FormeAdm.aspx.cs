@@ -12,9 +12,7 @@ using System.Drawing;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Configuration;
-using PLATFORMMEDICAL.Vue;
-using PLATFORMMEDICAL.Controleur;
-using PLATFORMMEDICAL.Model;
+
 
 namespace PLATFORMMEDICAL.Vue
 {
