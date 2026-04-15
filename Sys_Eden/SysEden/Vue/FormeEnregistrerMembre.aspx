@@ -15,7 +15,7 @@
                     <div class="col-12 col-md-4">
                       <div class="form-group">
                         <label>Code du membre</label>
-                        <asp:TextBox ID="txtCodeMembre" CssClass="form-control" runat="server" />
+                        <asp:TextBox ID="txtCodeMembre" CssClass="form-control" runat="server" readonly="true" />
                       </div>
                       <div class="form-group mt-2">
                         <label>Nom</label>
@@ -25,43 +25,52 @@
                         <label>Prénom</label>
                         <asp:TextBox ID="txtPrenom" CssClass="form-control" runat="server" />
                       </div>
+                     
                       <div class="form-group mt-2">
-                        <label>Sexe</label>
-                        <select class="form-select" name="sexe" required>
-                          <option value="">-- Sélectionner --</option>
-                          <option value="Masculin">Masculin</option>
-                          <option value="Féminin">Féminin</option>
-                        </select>
-                      </div>
+                        <label for="ddlSexe" class="form-control-label">Sexe</label>
+                        <asp:DropDownList ID="ddlSexe" runat="server" CssClass="form-control" Width="100%">
+                            <asp:ListItem Value="">-- Sélectionner --</asp:ListItem>
+                            <asp:ListItem Value="Féminin">Féminin</asp:ListItem>
+                            <asp:ListItem Value="Masculin">Masculin</asp:ListItem>
+                        </asp:DropDownList>
+                      </div>                            
+
                       <div class="form-group mt-2">
                         <label>Date de naissance</label>
                         <asp:TextBox ID="txtDateNaissance" CssClass="form-control" runat="server" TextMode="Date" />
                       </div>
-                                            <!-- Pays -->
-                        <div class="form-group mt-2">
-                            <label>Lieu de naissance</label>
-                            <select class="form-select mb-2" id="pays" name="pays" onchange="chargerDepartements()">
-                                <option value="">-- Pays --</option>
-                                <option value="Haïti">Haïti</option>
-                                <option value="France">France</option>
-                                <option value="Canada">Canada</option>
-                            </select>
 
-                            <!-- Département -->
-                            <select class="form-select mb-2" id="departement" name="departement" onchange="chargerArrondissements()">
-                                <option value="">-- Département --</option>
-                            </select>
+                      <!-- Lieu de naissance -->
+                      <div class="form-group mt-2">
+                          <label>Lieu de naissance</label>
 
-                            <!-- Arrondissement -->
-                            <select class="form-select mb-2" id="arrondissement" name="arrondissement" onchange="chargerCommunes()">
-                                <option value="">-- Arrondissement --</option>
-                            </select>
+                          <!-- Pays -->
+                          <asp:DropDownList ID="ddlPays" runat="server" CssClass="form-select mb-2" Width="100%"
+                              onchange="chargerDepartements()">
+                              <asp:ListItem Value="">-- Pays --</asp:ListItem>
+                              <asp:ListItem Value="Haïti">Haïti</asp:ListItem>
+                              <asp:ListItem Value="France">France</asp:ListItem>
+                              <asp:ListItem Value="Canada">Canada</asp:ListItem>
+                          </asp:DropDownList>
 
-                            <!-- Commune -->
-                            <select class="form-select" id="commune" name="commune">
-                                <option value="">-- Commune --</option>
-                            </select>
-                        </div>
+                          <!-- Département -->
+                          <asp:DropDownList ID="ddlDepartement" runat="server" CssClass="form-select mb-2" Width="100%"
+                              onchange="chargerArrondissements()">
+                              <asp:ListItem Value="">-- Département --</asp:ListItem>
+                          </asp:DropDownList>
+
+                          <!-- Arrondissement -->
+                          <asp:DropDownList ID="ddlArrondissement" runat="server" CssClass="form-select mb-2" Width="100%"
+                              onchange="chargerCommunes()">
+                              <asp:ListItem Value="">-- Arrondissement --</asp:ListItem>
+                          </asp:DropDownList>
+
+                          <!-- Commune -->
+                          <asp:DropDownList ID="ddlCommune" runat="server" CssClass="form-select" Width="100%">
+                              <asp:ListItem Value="">-- Commune --</asp:ListItem>
+                          </asp:DropDownList>
+                      </div>
+
                       <div class="form-group mt-2">
                         <label>Adresse</label>
                         <asp:TextBox ID="txtAdresse" CssClass="form-control" runat="server" />
@@ -88,13 +97,13 @@
                       </div>
                       <div class="form-group mt-2">
                         <label>État civil</label>
-                        <select class="form-select" name="etatCivil">
-                          <option value="">-- Sélectionner --</option>
-                          <option value="Célibataire">Célibataire</option>
-                          <option value="Marié">Marié</option>
-                          <option value="Divorcé">Divorcé</option>
-                          <option value="Veuf">Veuf</option>
-                        </select>
+                        <asp:DropDownList ID="ddlEtatCivil" runat="server" CssClass="form-select" Width="100%">
+                            <asp:ListItem Value="">-- Sélectionner --</asp:ListItem>
+                            <asp:ListItem Value="Célibataire">Célibataire</asp:ListItem>
+                            <asp:ListItem Value="Marié">Marié</asp:ListItem>
+                            <asp:ListItem Value="Divorcé">Divorcé</asp:ListItem>
+                            <asp:ListItem Value="Veuf">Veuf</asp:ListItem>
+                        </asp:DropDownList>
                       </div>
                       <div class="form-group mt-2">
                         <label>Niveau d'études</label>
@@ -114,11 +123,11 @@
                       </div>
                       <div class="form-group mt-2">
                         <label>Membre baptisé</label>
-                        <select class="form-select" name="etremembreBaptise">
-                          <option value="">-- Sélectionner --</option>
-                          <option value="Oui">Oui</option>
-                          <option value="Non">Non</option>
-                        </select>
+                        <asp:DropDownList ID="ddlMembreBaptise" runat="server" CssClass="form-select" Width="100%">
+                            <asp:ListItem Value="">-- Sélectionner --</asp:ListItem>
+                            <asp:ListItem Value="Oui">Oui</asp:ListItem>
+                            <asp:ListItem Value="Non">Non</asp:ListItem>
+                        </asp:DropDownList>
                       </div>
                     </div>
 
@@ -158,21 +167,75 @@
                       </div>
                       <div class="form-group mt-2">
                         <label>Statut</label>
-                        <select class="form-select" name="statut">
-                          <option value="">-- Sélectionner --</option>
-                          <option value="Actif">Actif</option>
-                          <option value="Inactif">Inactif</option>
-                        </select>
+                        <asp:DropDownList ID="ddlStatut" runat="server" CssClass="form-select" Width="100%">
+                            <asp:ListItem Value="">-- Sélectionner --</asp:ListItem>
+                            <asp:ListItem Value="Actif">Actif</asp:ListItem>
+                            <asp:ListItem Value="Inactif">Inactif</asp:ListItem>
+                        </asp:DropDownList>
                       </div>
                     </div>
 
+                  </div><%-- fin .row --%>
+
                   <div class="mt-3">
-                    <button class="btn btn-success" type="submit">Enregistrer</button>
-                    <button type="reset" class="btn btn-danger">Annuler</button>
+                    <asp:Button ID="btnEnregistrer" runat="server" Text="Enregistrer" CssClass="btn btn-success" OnClick="btnEnregistrer_Click" />
+                    <asp:Button ID="btnAnnuler" runat="server" Text="Annuler" CssClass="btn btn-danger" CausesValidation="false"
+                        OnClientClick="resetForm(); return false;" />
                   </div>
 
-              </div>
-            </div>
+              </div><%-- fin .card-body --%>
+            </div><%-- fin .card --%>
+
+         <div id="toastBox" style="position: fixed; top: 20px; right: 20px; z-index: 9999;"></div>
+
+        <script>
+            function showToast(type, message) {
+
+                var toast = document.createElement("div");
+
+                // styles de base
+                toast.style.minWidth = "250px";
+                toast.style.marginBottom = "10px";
+                toast.style.padding = "15px 20px";
+                toast.style.borderRadius = "8px";
+                toast.style.color = "#fff";
+                toast.style.fontWeight = "500";
+                toast.style.boxShadow = "0 5px 15px rgba(0,0,0,0.2)";
+                toast.style.opacity = "0";
+                toast.style.transition = "all 0.5s";
+
+                // couleurs selon type
+                if (type === "success") {
+                    toast.style.background = "#28a745";
+                    message = "✅ " + message;
+                } else if (type === "error") {
+                    toast.style.background = "#dc3545";
+                    message = "❌ " + message;
+                } else {
+                    toast.style.background = "#ffc107";
+                    toast.style.color = "#000";
+                    message = "⚠️ " + message;
+                }
+
+                toast.innerHTML = message;
+
+                document.getElementById("toastBox").appendChild(toast);
+
+                // animation entrée
+                setTimeout(() => {
+                    toast.style.opacity = "1";
+                    toast.style.transform = "translateX(-10px)";
+                }, 100);
+
+                // suppression après 3s
+                setTimeout(() => {
+                    toast.style.opacity = "0";
+                    setTimeout(() => {
+                        toast.remove();
+                    }, 500);
+                }, 3000);
+            }
+        </script>
          <script>
              /* Données complètes pour Haïti, France, Canada */
              const data = {
@@ -197,18 +260,16 @@
                          "Aquin": ["Aquin", "Saint-Louis-du-Sud"]
                      }
                  },
-
                  "France": {
                      "Île-de-France": {
                          "Paris": ["Montmartre", "La Défense", "Latin"],
                          "Versailles": ["Versailles", "Viroflay"]
                      },
-                     "Provence-Alpes-Côte d’Azur": {
+                     "Provence-Alpes-Côte d'Azur": {
                          "Marseille": ["Vieux-Port", "La Joliette"],
                          "Nice": ["Nice", "Cagnes-sur-Mer"]
                      }
                  },
-
                  "Canada": {
                      "Québec": {
                          "Montréal": ["Plateau-Mont-Royal", "Ville-Marie", "Rosemont"],
@@ -220,58 +281,67 @@
                  }
              };
 
-             /* Charger les départements selon le pays sélectionné */
-             function chargerDepartements() {
-                 const pays = document.getElementById("pays").value;
-                 const departement = document.getElementById("departement");
-                 const arrondissement = document.getElementById("arrondissement");
-                 const commune = document.getElementById("commune");
+             /* Récupère le select rendu par asp:DropDownList via son ClientID */
+             function getDDL(aspId) {
+                 // ASP.NET rend l'ID sous forme "ctl00_ContentPlaceHolder1_<ID>"
+                 // On utilise un sélecteur partiel pour être robuste
+                 return document.querySelector('[id$="' + aspId + '"]');
+             }
 
-                 departement.innerHTML = '<option value="">-- Département --</option>';
-                 arrondissement.innerHTML = '<option value="">-- Arrondissement --</option>';
-                 commune.innerHTML = '<option value="">-- Commune --</option>';
+             function chargerDepartements() {
+                 const pays = getDDL('ddlPays').value;
+                 const ddlDept = getDDL('ddlDepartement');
+                 const ddlArr = getDDL('ddlArrondissement');
+                 const ddlCom = getDDL('ddlCommune');
+
+                 ddlDept.innerHTML = '<option value="">-- Département --</option>';
+                 ddlArr.innerHTML = '<option value="">-- Arrondissement --</option>';
+                 ddlCom.innerHTML = '<option value="">-- Commune --</option>';
 
                  if (data[pays]) {
                      for (let d in data[pays]) {
-                         departement.innerHTML += `<option value="${d}">${d}</option>`;
+                         ddlDept.innerHTML += `<option value="${d}">${d}</option>`;
                      }
                  }
              }
 
-             /* Charger les arrondissements selon le département sélectionné */
              function chargerArrondissements() {
-                 const pays = document.getElementById("pays").value;
-                 const dept = document.getElementById("departement").value;
-                 const arrondissement = document.getElementById("arrondissement");
-                 const commune = document.getElementById("commune");
+                 const pays = getDDL('ddlPays').value;
+                 const dept = getDDL('ddlDepartement').value;
+                 const ddlArr = getDDL('ddlArrondissement');
+                 const ddlCom = getDDL('ddlCommune');
 
-                 arrondissement.innerHTML = '<option value="">-- Arrondissement --</option>';
-                 commune.innerHTML = '<option value="">-- Commune --</option>';
+                 ddlArr.innerHTML = '<option value="">-- Arrondissement --</option>';
+                 ddlCom.innerHTML = '<option value="">-- Commune --</option>';
 
                  if (data[pays] && data[pays][dept]) {
                      for (let a in data[pays][dept]) {
-                         arrondissement.innerHTML += `<option value="${a}">${a}</option>`;
+                         ddlArr.innerHTML += `<option value="${a}">${a}</option>`;
                      }
                  }
              }
 
-             /* Charger les communes selon l'arrondissement sélectionné */
              function chargerCommunes() {
-                 const pays = document.getElementById("pays").value;
-                 const dept = document.getElementById("departement").value;
-                 const arr = document.getElementById("arrondissement").value;
-                 const commune = document.getElementById("commune");
+                 const pays = getDDL('ddlPays').value;
+                 const dept = getDDL('ddlDepartement').value;
+                 const arr = getDDL('ddlArrondissement').value;
+                 const ddlCom = getDDL('ddlCommune');
 
-                 commune.innerHTML = '<option value="">-- Commune --</option>';
+                 ddlCom.innerHTML = '<option value="">-- Commune --</option>';
 
                  if (data[pays] && data[pays][dept] && data[pays][dept][arr]) {
                      data[pays][dept][arr].forEach(c => {
-                         commune.innerHTML += `<option value="${c}">${c}</option>`;
+                         ddlCom.innerHTML += `<option value="${c}">${c}</option>`;
                      });
                  }
              }
-</script>
 
+             function resetForm() {
+                 document.querySelectorAll('input[type=text], input[type=email], input[type=date], input[type=number]')
+                     .forEach(el => el.value = '');
+                 document.querySelectorAll('select').forEach(el => el.selectedIndex = 0);
+             }
+         </script>
 
     </main>
 

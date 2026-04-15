@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SysEden.Vue {
-    
-    
-    public partial class FormeEnregistrerMembre {
-        
+namespace SysEden.Vue
+{
+
+
+    public partial class FormeEnregistrerMembre
+    {
+
         /// <summary>
         /// txtCodeMembre control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCodeMembre;
-        
+
         /// <summary>
         /// txtNom control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNom;
-        
+
         /// <summary>
         /// txtPrenom control.
         /// </summary>
@@ -38,7 +40,16 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPrenom;
-        
+
+        /// <summary>
+        /// ddlSexe control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlSexe;
+
         /// <summary>
         /// txtDateNaissance control.
         /// </summary>
@@ -47,7 +58,43 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDateNaissance;
-        
+
+        /// <summary>
+        /// ddlPays control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlPays;
+
+        /// <summary>
+        /// ddlDepartement control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlDepartement;
+
+        /// <summary>
+        /// ddlArrondissement control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlArrondissement;
+
+        /// <summary>
+        /// ddlCommune control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCommune;
+
         /// <summary>
         /// txtAdresse control.
         /// </summary>
@@ -56,7 +103,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAdresse;
-        
+
         /// <summary>
         /// txtTelephone control.
         /// </summary>
@@ -65,7 +112,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTelephone;
-        
+
         /// <summary>
         /// txtEmail control.
         /// </summary>
@@ -74,7 +121,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
-        
+
         /// <summary>
         /// txtNationalite control.
         /// </summary>
@@ -83,7 +130,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNationalite;
-        
+
         /// <summary>
         /// txtNIF control.
         /// </summary>
@@ -92,7 +139,16 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNIF;
-        
+
+        /// <summary>
+        /// ddlEtatCivil control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlEtatCivil;
+
         /// <summary>
         /// txtNiveauEtude control.
         /// </summary>
@@ -101,7 +157,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNiveauEtude;
-        
+
         /// <summary>
         /// txtDateMariage control.
         /// </summary>
@@ -110,7 +166,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDateMariage;
-        
+
         /// <summary>
         /// txtNombreEnfant control.
         /// </summary>
@@ -119,7 +175,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNombreEnfant;
-        
+
         /// <summary>
         /// txtProfession control.
         /// </summary>
@@ -128,7 +184,16 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtProfession;
-        
+
+        /// <summary>
+        /// ddlMembreBaptise control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlMembreBaptise;
+
         /// <summary>
         /// txtDateConversion control.
         /// </summary>
@@ -137,7 +202,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDateConversion;
-        
+
         /// <summary>
         /// txtDateBapteme control.
         /// </summary>
@@ -146,7 +211,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDateBapteme;
-        
+
         /// <summary>
         /// txtNomEgliseSortante control.
         /// </summary>
@@ -155,7 +220,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNomEgliseSortante;
-        
+
         /// <summary>
         /// txtNomPasteur control.
         /// </summary>
@@ -164,7 +229,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNomPasteur;
-        
+
         /// <summary>
         /// txtTelephonePasteur control.
         /// </summary>
@@ -173,7 +238,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTelephonePasteur;
-        
+
         /// <summary>
         /// txtReferenceEglise control.
         /// </summary>
@@ -182,7 +247,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtReferenceEglise;
-        
+
         /// <summary>
         /// fuPhoto control.
         /// </summary>
@@ -191,7 +256,7 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload fuPhoto;
-        
+
         /// <summary>
         /// txtDateEnregistrement control.
         /// </summary>
@@ -200,5 +265,32 @@ namespace SysEden.Vue {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDateEnregistrement;
+
+        /// <summary>
+        /// ddlStatut control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlStatut;
+
+        /// <summary>
+        /// btnEnregistrer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEnregistrer;
+
+        /// <summary>
+        /// btnAnnuler control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAnnuler;
     }
 }

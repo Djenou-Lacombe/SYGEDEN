@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
-using PLATFORMMEDICAL.Model;
 using System.Data;
 
 namespace PLATFORMMEDICAL.Vue
@@ -16,11 +15,11 @@ namespace PLATFORMMEDICAL.Vue
             {
                 try
                 {
-                    int nombre = Medecin.GetNombreMedecins();
-                    lbnombreMedecin.Text = nombre.ToString();
+                    //int nombre = Medecin.GetNombreMedecins();
+                    //lbnombreMedecin.Text = nombre.ToString();
 
-                    int nbpatient = Controleur.Patient.GetNombrePatients();
-                    lbnombrePatient.Text = nbpatient.ToString();
+                    //int nbpatient = Controleur.Patient.GetNombrePatients();
+                    //lbnombrePatient.Text = nbpatient.ToString();
                     this.ChargerRdvParJour();
                     this.ChargerTotalEnregistrement();
 ;                }

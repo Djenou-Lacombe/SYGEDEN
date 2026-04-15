@@ -97,3 +97,38 @@ C:\Users\DJEY COMPUTER\Pictures\Sys_Eden\SysEden\bin\Microsoft.ApplicationInsigh
 C:\Users\DJEY COMPUTER\Pictures\Sys_Eden\SysEden\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\DJEY COMPUTER\Pictures\Sys_Eden\SysEden\obj\Debug\SysEden.dll
 C:\Users\DJEY COMPUTER\Pictures\Sys_Eden\SysEden\obj\Debug\SysEden.pdb
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\obj\Debug\SysEden.csproj.AssemblyReference.cache
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\obj\Debug\SysEden.csproj.CoreCompileInputs.cache
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\obj\Debug\SysEden.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\obj\Debug\SysEden.pdb
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\ApplicationInsights.config
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\csc.exe
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\vbc.exe
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\VBCSCompiler.exe
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\SysEden.dll.config
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\SysEden.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\SysEden.pdb
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.Web.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.Web.xml
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LETAILLE\Source\Repos\SYSGEDEN\Sys_Eden\SysEden\obj\Debug\SysEden.csproj.Up2Date

@@ -11,19 +11,18 @@ namespace SysEden.Controleur
 {
     public class ControleurMembre
     {
-        public Membre Pat;
-        private object pat;
+        public Membre Mem;
 
         public ControleurMembre()
         {
-            Pat = new Membre();
+            Mem = new Membre();
         }
 
         // =====================================================
         // ENREGISTRER MEMBRE
         // =====================================================
         public void EnregistrerMembre(
-            int idMembre, string codeMembre, string nom, string prenom, string sexe,
+            string codeMembre, string nom, string prenom, string sexe,
             string dateNaissance, string departementNaissance,
             string arrondissement,
             string commune, string adresse, string telephone, string email,
@@ -33,38 +32,37 @@ namespace SysEden.Controleur
             string nomPasteur, string telephonePasteur, string referenceEglise,
             string photo, string statut)
         {
-            Pat = new Membre();
+            Mem = new Membre();
 
-            Pat.IdMembre = idMembre;
-            Pat.CodeMembre = codeMembre;
-            Pat.Nom = nom;
-            Pat.Prenom = prenom;
-            Pat.Sexe = sexe;
-            Pat.DateNaissance = dateNaissance;
-            Pat.DepartementNaissance = departementNaissance;
-            Pat.Arrondissement = arrondissement;
-            Pat.Commune = commune;
-            Pat.Adresse = adresse;
-            Pat.Telephone = telephone;
-            Pat.Email = email;
-            Pat.Nif = nif;
-            Pat.EtatCivil = etatCivil;
-            Pat.NiveauEtude = niveauEtude;
-            Pat.DateMariage = dateMariage;
-            Pat.NombreEnfant = nombreEnfant;
-            Pat.Profession = profession;
-            Pat.EtreMembreBaptise = etreMembreBaptise;
-            Pat.DateConversion = dateConversion;
-            Pat.DateBapteme = dateBapteme;
-            Pat.NomEgliseSortante = nomEgliseSortante;
-            Pat.NomPasteur = nomPasteur;
-            Pat.TelephonePasteur = telephonePasteur;
-            Pat.ReferenceEglise = referenceEglise;
-            Pat.Photo = photo;
-            Pat.Statut = statut;
+            Mem.CodeMembre = codeMembre;
+            Mem.Nom = nom;
+            Mem.Prenom = prenom;
+            Mem.Sexe = sexe;
+            Mem.DateNaissance = dateNaissance;
+            Mem.DepartementNaissance = departementNaissance;
+            Mem.Arrondissement = arrondissement;
+            Mem.Commune = commune;
+            Mem.Adresse = adresse;
+            Mem.Telephone = telephone;
+            Mem.Email = email;
+            Mem.Nif = nif;
+            Mem.EtatCivil = etatCivil;
+            Mem.NiveauEtude = niveauEtude;
+            Mem.DateMariage = dateMariage;
+            Mem.NombreEnfant = nombreEnfant;
+            Mem.Profession = profession;
+            Mem.EtreMembreBaptise = etreMembreBaptise;
+            Mem.DateConversion = dateConversion;
+            Mem.DateBapteme = dateBapteme;
+            Mem.NomEgliseSortante = nomEgliseSortante;
+            Mem.NomPasteur = nomPasteur;
+            Mem.TelephonePasteur = telephonePasteur;
+            Mem.ReferenceEglise = referenceEglise;
+            Mem.Photo = photo;
+            Mem.Statut = statut;
 
             // 🔹 Création du membre
-            Pat.CreerMembre();
+            Mem.creerMembre();
 
             // 🔹 Envoi du mail après enregistrement
             try
@@ -101,37 +99,37 @@ namespace SysEden.Controleur
             string nomPasteur, string telephonePasteur, string referenceEglise,
             string photo, string statut)
         {
-            Pat = new Membre();
+            Mem = new Membre();
 
-            Pat.IdMembre = idMembre;
-            Pat.CodeMembre = codeMembre;
-            Pat.Nom = nom;
-            Pat.Prenom = prenom;
-            Pat.Sexe = sexe;
-            Pat.DateNaissance = dateNaissance;
-            Pat.DepartementNaissance = departementNaissance;
-            Pat.Arrondissement = arrondissement;
-            Pat.Commune = commune;
-            Pat.Adresse = adresse;
-            Pat.Telephone = telephone;
-            Pat.Email = email;
-            Pat.Nif = nif;
-            Pat.EtatCivil = etatCivil;
-            Pat.NiveauEtude = niveauEtude;
-            Pat.DateMariage = dateMariage;
-            Pat.NombreEnfant = nombreEnfant;
-            Pat.Profession = profession;
-            Pat.EtreMembreBaptise = etreMembreBaptise;
-            Pat.DateConversion = dateConversion;
-            Pat.DateBapteme = dateBapteme;
-            Pat.NomEgliseSortante = nomEgliseSortante;
-            Pat.NomPasteur = nomPasteur;
-            Pat.TelephonePasteur = telephonePasteur;
-            Pat.ReferenceEglise = referenceEglise;
-            Pat.Photo = photo;
-            Pat.Statut = statut;
+            Mem.IdMembre = idMembre;
+            Mem.CodeMembre = codeMembre;
+            Mem.Nom = nom;
+            Mem.Prenom = prenom;
+            Mem.Sexe = sexe;
+            Mem.DateNaissance = dateNaissance;
+            Mem.DepartementNaissance = departementNaissance;
+            Mem.Arrondissement = arrondissement;
+            Mem.Commune = commune;
+            Mem.Adresse = adresse;
+            Mem.Telephone = telephone;
+            Mem.Email = email;
+            Mem.Nif = nif;
+            Mem.EtatCivil = etatCivil;
+            Mem.NiveauEtude = niveauEtude;
+            Mem.DateMariage = dateMariage;
+            Mem.NombreEnfant = nombreEnfant;
+            Mem.Profession = profession;
+            Mem.EtreMembreBaptise = etreMembreBaptise;
+            Mem.DateConversion = dateConversion;
+            Mem.DateBapteme = dateBapteme;
+            Mem.NomEgliseSortante = nomEgliseSortante;
+            Mem.NomPasteur = nomPasteur;
+            Mem.TelephonePasteur = telephonePasteur;
+            Mem.ReferenceEglise = referenceEglise;
+            Mem.Photo = photo;
+            Mem.Statut = statut;
 
-            Pat.ModifierMembre();
+            Mem.ModifierMembre();
         }
 
         // =====================================================
@@ -139,7 +137,7 @@ namespace SysEden.Controleur
         // =====================================================
         public bool RechercherMembre(int idMembre)
         {
-            return Pat.Rechercher(idMembre);
+            return Mem.Rechercher(idMembre);
         }
 
         // =====================================================
@@ -147,39 +145,39 @@ namespace SysEden.Controleur
         // =====================================================
         public DataSet GetListerMembre()
         {
-            return Pat.ListerMembres();
+            return Mem.ListerMembres();
         }
 
         // =====================================================
         // GETTERS
         // =====================================================
-        public string GetNom() => Pat?.Nom;
-        public string GetPrenom() => Pat?.Prenom;
-        public string GetSexe() => Pat?.Sexe;
-        public string GetDateNaissance() => Pat?.DateNaissance;
-        public string GetPaysNaissance() => Pat?.DepartementNaissance;
-        public string GetArrondissement() => Pat?.Arrondissement;
-        public string GetCommune() => Pat?.Commune;
-        public string GetAdresse() => Pat?.Adresse;
-        public string GetTelephone() => Pat?.Telephone;
-        public string GetEmail() => Pat?.Email;
-        public string GetNationalite() => Pat?.Nationalite;
-        public string GetNif() => Pat?.Nif;
-        public string GetEtatCivil() => Pat?.EtatCivil;
-        public string GetNiveauEtude() => Pat?.NiveauEtude;
-        public string GetDateMariage() => Pat?.DateMariage;
-        public string GetNombreEnfant() => Pat?.NombreEnfant;
-        public string GetProfession() => Pat?.Profession;
-        public string GetEtreMembreBaptise() => Pat?.EtreMembreBaptise;
-        public string GetDateConversion() => Pat?.DateConversion;
-        public string GetDateBapteme() => Pat?.DateBapteme;
-        public string GetNomEgliseSortante() => Pat?.NomEgliseSortante;
-        public string GetNomPasteur() => Pat?.NomPasteur;
-        public string GetTelephonePasteur() => Pat?.TelephonePasteur;
-        public string GetReferenceEglise() => Pat?.ReferenceEglise;
-        public string GetPhoto() => Pat?.Photo;
-        public string GetDateEnregistrement() => Pat?.DateEnregistrement;
-        public string GetStatut() => Pat?.Statut;
+        public string GetNom() => Mem?.Nom;
+        public string GetPrenom() => Mem?.Prenom;
+        public string GetSexe() => Mem?.Sexe;
+        public string GetDateNaissance() => Mem?.DateNaissance;
+        public string GetPaysNaissance() => Mem?.DepartementNaissance;
+        public string GetArrondissement() => Mem?.Arrondissement;
+        public string GetCommune() => Mem?.Commune;
+        public string GetAdresse() => Mem?.Adresse;
+        public string GetTelephone() => Mem?.Telephone;
+        public string GetEmail() => Mem?.Email;
+        public string GetNationalite() => Mem?.Nationalite;
+        public string GetNif() => Mem?.Nif;
+        public string GetEtatCivil() => Mem?.EtatCivil;
+        public string GetNiveauEtude() => Mem?.NiveauEtude;
+        public string GetDateMariage() => Mem?.DateMariage;
+        public string GetNombreEnfant() => Mem?.NombreEnfant;
+        public string GetProfession() => Mem?.Profession;
+        public string GetEtreMembreBaptise() => Mem?.EtreMembreBaptise;
+        public string GetDateConversion() => Mem?.DateConversion;
+        public string GetDateBapteme() => Mem?.DateBapteme;
+        public string GetNomEgliseSortante() => Mem?.NomEgliseSortante;
+        public string GetNomPasteur() => Mem?.NomPasteur;
+        public string GetTelephonePasteur() => Mem?.TelephonePasteur;
+        public string GetReferenceEglise() => Mem?.ReferenceEglise;
+        public string GetPhoto() => Mem?.Photo;
+        public string GetDateEnregistrement() => Mem?.DateEnregistrement;
+        public string GetStatut() => Mem?.Statut;
     }
 
 

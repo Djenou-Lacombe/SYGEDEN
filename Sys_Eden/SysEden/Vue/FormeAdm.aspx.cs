@@ -1,21 +1,7 @@
 ﻿using System;
-using System.Web;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
 using System.Data.SqlClient;
-using System.Data.Odbc;
-using System.Data.OleDb;
-using System.Drawing;
-using System.IO;
-using System.Text.RegularExpressions;
 using System.Configuration;
-using PLATFORMMEDICAL.Vue;
-using PLATFORMMEDICAL.Controleur;
-using PLATFORMMEDICAL.Model;
-
+ 
 namespace PLATFORMMEDICAL.Vue
 {
     public partial class FormeAdm : System.Web.UI.Page

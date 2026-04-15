@@ -78,7 +78,7 @@ namespace SysEden.Model
             this.statut = statut;
         }
 
-        internal void CreerMembre() { }
+
        
 
         public Membre() : this(0, null, null, null, null,  null, null,null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null) { }
@@ -286,80 +286,109 @@ namespace SysEden.Model
             }
         }
 
-        public bool Nombremembre()
-        {
-            string chCon = "server = DJEY-COMPUTER; uid = sa; pwd = abc; Database = DBSysEden";
-            string chReq = string.Format("select count(*) as code from membre");
-            SqlConnection con = new SqlConnection(chCon);
-            SqlCommand cmd = null;
-            bool trouves = false;
-            try
-            {
-                con.Open();
-                cmd = new SqlCommand(chReq, con);
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    int nombre = int.Parse(reader["code"].ToString());
+        //public bool Nombremembre()
+        //{
+        //    string chCon = "server = DJEY-COMPUTER; uid = sa; pwd = abc; Database = DBSysEden";
+        //    string chReq = string.Format("select count(*) as code from membre");
+        //    SqlConnection con = new SqlConnection(chCon);
+        //    SqlCommand cmd = null;
+        //    bool trouves = false;
+        //    try
+        //    {
+        //        con.Open();
+        //        cmd = new SqlCommand(chReq, con);
+        //        SqlDataReader reader = cmd.ExecuteReader();
+        //        if (reader.Read())
+        //        {
+        //            int nombre = int.Parse(reader["code"].ToString());
 
 
 
-                    trouves = true;
-                }
-                reader.Close();
-                con.Close();
-                return trouves;
+        //            trouves = true;
+        //        }
+        //        reader.Close();
+        //        con.Close();
+        //        return trouves;
 
-            }
-            catch (Exception)
-            {
-                return trouves;
-            }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return trouves;
+        //    }
 
-        }
+        //}
 
         public void creerMembre()
         {
-            string chCon = "server = DJEY-COMPUTER; uid = sa; pwd = abc; Database = DBSysEden";
+            string chCon = ConfigurationManager.ConnectionStrings["dbConnect"].ConnectionString;
+            string chReq = @"
+                INSERT INTO Membre (
+                    code_membre, nom, prenom, sexe, date_naissance, adresse, telephone,
+                    email, nationalite, Nif_sin, etat_civil, niveau_etude, date_mariage,
+                    nombre_enfant, profession, etre_membre, date_conversion, date_bapteme,
+                    nom_eglise_sortante, nom_pasteur, telephone_pasteur, reference_eglise,
+                    photo, statut, date_enregistrement)
+                VALUES (
+                    @codeMembre, @nom, @prenom, @sexe, @dateNaissance, @adresse, @telephone,
+                    @email, @nationalite, @nif, @etatCivil, @niveauEtude, @dateMariage,
+                    @nombreEnfant, @profession, @etreMembreBaptise, @dateConversion, @dateBapteme,
+                    @nomEgliseSortante, @nomPasteur, @telephonePasteur, @referenceEglise,
+                    @photo, @statut, @dateEnregistrement)";
 
-            string chReq = string.Format("Insert into membre(idMembre, codeMembre, nom, prenom, sexe, dateNaissance, departementNaissance, arrondissement, commune, adresse, telephone, email, nif, etatCivil, niveauEtude, dateMariage, nombreEnfant, profession, etremembreBaptise, dateConversion, dateBapteme, nomEgliseSortante, nomPasteur, telephonePasteur, referenceEglise, photo, statut VALUES ('{0}', '{1}', '{2}', '{3}', '{4}' '{11}''{12}''{13}''{14}''{15}''{16}''{17}''{18}''{19}''{20}''{21}''{22}''{23}''{24}''{25}''{26}')", idMembre, codeMembre, nom, prenom, sexe, dateNaissance, adresse, telephone, email, nif, etatCivil, niveauEtude, dateMariage, nombreEnfant, profession, etremembreBaptise, dateConversion, dateBapteme, nomEgliseSortante, nomPasteur, telephonePasteur, referenceEglise, photo, statut);
-            SqlConnection con = new SqlConnection(chCon);
-            SqlCommand cmd = new SqlCommand(chReq, con);
-            try
+            using (var con = new SqlConnection(chCon))
+            using (var cmd = new SqlCommand(chReq, con))
             {
+                cmd.Parameters.AddWithValue("@codeMembre", codeMembre ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@nom", nom ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@prenom", prenom ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@sexe", sexe ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@dateNaissance", string.IsNullOrWhiteSpace(dateNaissance) ? (object)DBNull.Value : dateNaissance);
+                cmd.Parameters.AddWithValue("@adresse", adresse ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@telephone", telephone ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@email", email ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@nationalite", nationalite ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@nif", nif ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@etatCivil", etatCivil ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@niveauEtude", niveauEtude ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@dateMariage", string.IsNullOrWhiteSpace(dateMariage) ? (object)DBNull.Value : dateMariage);
+                cmd.Parameters.AddWithValue("@nombreEnfant", nombreEnfant ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@profession", profession ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@etreMembreBaptise", etremembreBaptise ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@dateConversion", string.IsNullOrWhiteSpace(dateConversion) ? (object)DBNull.Value : dateConversion);
+                cmd.Parameters.AddWithValue("@dateBapteme", string.IsNullOrWhiteSpace(dateBapteme) ? (object)DBNull.Value : dateBapteme);
+                cmd.Parameters.AddWithValue("@nomEgliseSortante", nomEgliseSortante ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@nomPasteur", nomPasteur ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@telephonePasteur", telephonePasteur ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@referenceEglise", referenceEglise ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@photo", photo ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@statut", statut ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@dateEnregistrement", dateEnregistrement ?? (object)DBNull.Value);
+
                 con.Open();
-                cmd.ExecuteNonQuery();
-                Console.WriteLine("Imformation", "Enregistrement effectue avec succes!");
-                con.Close();
-
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("erreur", "erreur de connection");
-            }
-
-        }
-
-        public void modifierMembre(int idMembre, string codeMembre, string nom, string prenom, string sexe, string dateNaissance,string departementNaissance,string arrondissement, string commune, string adresse, string telephone, string email, string nif, string etatCivil, string niveauEtude, string dateMariage, string nombreEnfant, string profession, string etremembreBaptise, string dateConversion, string dateBapteme, string nomEgliseSortante, string nomPasteur, string telephonePasteur, string referenceEglise, string photo, string statut)
-        {
-            string chCon = "server = DJEY-COMPUTER; uid = sa; pwd = abc; Database = DBSysEden";
-            string chReq = string.Format("UPDATE tbmembre SET idMembre = '{0}, codeMembre, nom, prenom, sexe, dateNaissance,departementNaissance, arrondissement, commune, adresse, telephone, email, nif, etatCivil, niveauEtude, dateMariage, nombreEnfant, profession, etreMembreBaptise, dateConversion, dateBapteme, nomEgliseSortante, nomPasteur, telephonePasteur, referenceEglise, photo, statut='{4}',' WHERE idPasteur ='{0}'", idMembre, codeMembre, nom, prenom, sexe, dateNaissance, adresse, telephone, email, nif, etatCivil, niveauEtude, dateMariage, nombreEnfant, profession, etremembreBaptise, dateConversion, dateBapteme, nomEgliseSortante, nomPasteur, telephonePasteur, referenceEglise, photo, statut);
-
-            using (SqlConnection con = new SqlConnection(chCon))
-            using (SqlCommand cmd = new SqlCommand(chReq, con))
-            {
-                try
-                {
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                    Console.WriteLine("Modification effectuée avec succès !", "Information");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Erreur de connexion : " + ex.Message, "Erreur");
-                }
+                 cmd.ExecuteNonQuery();
             }
         }
+
+        //public void modifierMembre(int idMembre, string codeMembre, string nom, string prenom, string sexe, string dateNaissance,string departementNaissance,string arrondissement, string commune, string adresse, string telephone, string email, string nif, string etatCivil, string niveauEtude, string dateMariage, string nombreEnfant, string profession, string etremembreBaptise, string dateConversion, string dateBapteme, string nomEgliseSortante, string nomPasteur, string telephonePasteur, string referenceEglise, string photo, string statut)
+        //{
+        //    string chCon = "server = DJEY-COMPUTER; uid = sa; pwd = abc; Database = DBSysEden";
+        //    string chReq = string.Format("UPDATE tbmembre SET idMembre = '{0}, codeMembre, nom, prenom, sexe, dateNaissance,departementNaissance, arrondissement, commune, adresse, telephone, email, nif, etatCivil, niveauEtude, dateMariage, nombreEnfant, profession, etreMembreBaptise, dateConversion, dateBapteme, nomEgliseSortante, nomPasteur, telephonePasteur, referenceEglise, photo, statut='{4}',' WHERE idPasteur ='{0}'", idMembre, codeMembre, nom, prenom, sexe, dateNaissance, adresse, telephone, email, nif, etatCivil, niveauEtude, dateMariage, nombreEnfant, profession, etremembreBaptise, dateConversion, dateBapteme, nomEgliseSortante, nomPasteur, telephonePasteur, referenceEglise, photo, statut);
+
+        //    using (SqlConnection con = new SqlConnection(chCon))
+        //    using (SqlCommand cmd = new SqlCommand(chReq, con))
+        //    {
+        //        try
+        //        {
+        //            con.Open();
+        //            cmd.ExecuteNonQuery();
+        //            Console.WriteLine("Modification effectuée avec succès !", "Information");
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Console.WriteLine("Erreur de connexion : " + ex.Message, "Erreur");
+        //        }
+        //    }
+        //}
 
         public bool Rechercher(int idMembre)
         {
