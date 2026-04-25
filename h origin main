@@ -1,0 +1,60 @@
+[33mcommit a65381484aec3ca3a8f154fa6351959f4ceda63b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Letaille Edner <ednerletaille19@gmail.com>
+Date:   Wed Apr 15 09:59:59 2026 -0400
+
+    Appliquer .gitignore - retirer fichiers auto-générés
+
+[33mcommit b4206d1c5f1dfe4b28bdbd6784530f4407403552[m
+Author: Letaille Edner <ednerletaille19@gmail.com>
+Date:   Wed Apr 15 09:57:10 2026 -0400
+
+    Ignorer le dossier .vs
+
+[33mcommit b2c4e966303b7340d632e1e36af2250f3a753359[m
+Merge: a6461b9 8221320
+Author: Letaille Edner <ednerletaille19@gmail.com>
+Date:   Wed Apr 15 09:52:59 2026 -0400
+
+    Résolution des conflits de merge
+
+[33mcommit a6461b9c619d93bde152201587b64c4e011563cd[m
+Author: Letaille Edner <ednerletaille19@gmail.com>
+Date:   Wed Apr 15 09:50:07 2026 -0400
+
+    all
+
+[33mcommit 9b8036f2b8527e76142736576cce651a77183f91[m
+Author: Letaille Edner <ednerletaille19@gmail.com>
+Date:   Wed Apr 15 09:48:48 2026 -0400
+
+    Retirer .vs/ du suivi Git
+
+[33mcommit 8dc4c9796c5df5fbc761bf801bb72f2e739afa10[m
+Author: Letaille Edner <ednerletaille19@gmail.com>
+Date:   Wed Apr 15 09:47:45 2026 -0400
+
+    Retirer .vs/ du suivi Git
+
+[33mcommit e41b1b7e637986d7cde48dcfe9d8de8e9b558509[m
+Author: Letaille Edner <ednerletaille19@gmail.com>
+Date:   Wed Apr 15 09:47:30 2026 -0400
+
+    Retirer .vs/ du suivi Git
+
+[33mcommit 70516930c7d78675f21af71f146b1177392f3c68[m
+Author: Letaille Edner <ednerletaille19@gmail.com>
+Date:   Wed Apr 15 09:10:12 2026 -0400
+
+    all
+
+[33mcommit 82213206ff8eda2ad54e07e24949c77285c4377d[m
+Author: Letaille Edner <ednerletaille19@gmail.com>
+Date:   Wed Apr 8 10:40:32 2026 -0400
+
+    initial push
+
+[33mcommit 125bc55579240c4ae5144c4a8644a542000ce36d[m
+Author: Djenou Lacombe <djenoulacombe020@gmail.com>
+Date:   Sun Apr 5 02:19:28 2026 -0400
+
+    Premier commit - ajout du projet SYSGEDEN

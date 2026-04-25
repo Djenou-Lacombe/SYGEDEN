@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginAdm.aspx.cs" Inherits="PLATFORMMEDICAL.Vue.LoginAdm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginAdm.aspx.cs" Inherits="SysEden.Vue.LoginAdm" %>
 
 <!DOCTYPE html>
 

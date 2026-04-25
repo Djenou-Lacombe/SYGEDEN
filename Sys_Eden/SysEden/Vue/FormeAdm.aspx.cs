@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Configuration;
-<<<<<<< HEAD
- 
-=======
 
-
->>>>>>> 82213206ff8eda2ad54e07e24949c77285c4377d
-namespace PLATFORMMEDICAL.Vue
+namespace SysEden.Vue
 {
     public partial class FormeAdm : System.Web.UI.Page
     {

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Accueil.aspx.cs" Inherits="PLATFORMMEDICAL.Vue.Accueil" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Accueil.aspx.cs" Inherits="SysEden.Vue.Accueil" %>
 
 <!DOCTYPE html>
 

@@ -9,7 +9,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Configuration;
 
-namespace PLATFORMMEDICAL.Vue
+namespace SysEden.Vue
 {
     public partial class LoginAdm : System.Web.UI.Page
     {

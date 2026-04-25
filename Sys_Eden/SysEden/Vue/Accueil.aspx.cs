@@ -3,7 +3,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace PLATFORMMEDICAL.Vue
+namespace SysEden.Vue
 {
     public partial class Accueil : System.Web.UI.Page
     {
@@ -15,19 +15,12 @@ namespace PLATFORMMEDICAL.Vue
             {
                 try
                 {
-<<<<<<< HEAD
                     //int nombre = Medecin.GetNombreMedecins();
                     //lbnombreMedecin.Text = nombre.ToString();
 
                     //int nbpatient = Controleur.Patient.GetNombrePatients();
                     //lbnombrePatient.Text = nbpatient.ToString();
-=======
-                   
-                   
 
-                 
-                 
->>>>>>> 82213206ff8eda2ad54e07e24949c77285c4377d
                     this.ChargerRdvParJour();
                     this.ChargerTotalEnregistrement();
 ;                }

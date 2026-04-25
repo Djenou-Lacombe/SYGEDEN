@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PLATFORMMEDICAL.Vue {
+namespace SysEden.Vue {
     
     
     public partial class LoginAdm {
