@@ -59,7 +59,7 @@
                <div class="col-sm-12">
                   <div class="header_top_main">
                      <div class="call_text"><a href="#"><span class="padding_right0"><i class="fa fa-phone" aria-hidden="true"></i></span>Telephone: (+509) 47607935</a></div>
-                     <div class="call_text_2"><a href="#"><span class="padding_right0"><i class="fa fa-envelope" aria-hidden="true"></i></span> powerfultech3@gmail.com</a></div>
+                     <div class="call_text_2"><a href="#"><span class="padding_right0"><i class="fa fa-envelope" aria-hidden="true"></i></span> djeycomputer020@gmail.com</a></div>
                      <div class="call_text_1"><a href="#"><span class="padding_right0"><i class="fa fa-map-marker" aria-hidden="true"></i></span> Localisationtion</a></div>
                   </div>
                </div>
@@ -81,17 +81,29 @@
                         <a class="nav-link" href="index.html">Accueil</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">À propos </a>
+                        <a class="nav-link" href="about.html">Image</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="treatment.html">Spécialités</a>
+                        <a class="nav-link" href="treatment.html">Video</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="doctors.html">Nos spécialistes</a>
+                        <a class="nav-link" href="pasteur.html">Radio</a>
+                     </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pasteur.html">Donation</a>
+                     </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pasteur.html">Priere</a>
+                     </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pasteur.html">A propos de nous</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contactez-Nous</a>
                      </li>
+
+                      <div id="menuDropdown" class="dropdown">
+      
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                   </form>
@@ -101,9 +113,12 @@
                <div class="custom_menu">
                   <ul>
                      <li class="active"><a href="index.html">Accueil</a></li>
-                     <li><a href="about.html">À propos </a></li>
-                     <li><a href="treatment.html">Spécialités</a></li>
-                     <li><a href="doctors.html">Nos spécialistes</a></li>
+                     <li><a href="about.html">Image </a></li>
+                     <li><a href="treatment.html">Video</a></li>
+                     <li><a href="pasteur.html">Radio</a></li>
+                      <li><a href="about.html">Donation</a></li>
+                     <li><a href="treatment.html">Priere</a></li>
+                     <li><a href="pasteur.html">A propos de nous</a></li>
                      <li><a href="contact.html">Contactez-nous</a></li>
                   </ul>
                </div>
@@ -112,16 +127,16 @@
           <ul>
             <li class="dropdown"><a href="#"><span class="auto-style1"><strong>Inscription</strong></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li class="dropdown"><a href="#"><span>Patient</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a href="#"><span>Membre</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
-                    <li><a href="InscriptionPatient.aspx">Inscrire</a></li>
-                    <li><a href="LoginPatient.aspx">Se connecter</a></li>
+                    <li><a href="InscriptionMembre.aspx">Inscrire</a></li>
+                    <li><a href="LoginMembre.aspx">Se connecter</a></li>
                   </ul>
                 </li>
-                 <li class="dropdown"><a href="#"><span>Medecin</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                 <li class="dropdown"><a href="#"><span>pasteur</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
-                    <li><a href="InscriptionMedecin.aspx">Inscrire</a></li>
-                    <li><a href="LoginMedecin.aspx">Se connecter</a></li>
+                    <li><a href="InscriptionPasteur.aspx">Inscrire</a></li>
+                    <li><a href="LoginPasteur.aspx">Se connecter</a></li>
                   </ul>
                 </li>
                  <li class="dropdown"><a href="#"><span>Administration</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -143,8 +158,8 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                     <h1 class="banner_taital">Bienvenue à POWERFULMED</h1>
-                     <p class="banner_text">Nous vous accueillons sur notre site officiel, dédié à vous informer et à vous accompagner dans vos démarches de santé. Vous y trouverez toutes les informations utiles sur nos services, nos équipes et votre parcours de soins.</p>
+                     <h1 class="banner_taital">Bienvenue à Eglise EDEN</h1>
+                     <p class="banner_text">Nous vous accueillons sur notre site officiel, dédié à vous informer et à vous accompagner dans la vie spirituele. Vous y trouverez toutes les informations utiles sur nos services, nos équipes .</p>
                   </div>
                </div>
             </div>
@@ -166,12 +181,12 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6">
-                  <h1 class="about_taital">À propos de POWERFULMED</h1>
-                  <p class="about_text">POWERFULMED est un établissement de santé moderne et engagé, dédié à offrir des soins de qualité, accessibles et centrés sur le patient.
+                  <h1 class="about_taital">À propos de Eglise EDEN</h1>
+                  <p class="about_text">EDEN est une institution chretienne moderne et engagé, dédié à offrir des chretienne de qualité, accessibles et centrés sur le Membre.
 
-Nos équipes médicales et soignantes, hautement qualifiées, travaillent chaque jour avec professionnalisme et bienveillance pour assurer une prise en charge complète et personnalisée. Grâce à des équipements de pointe et à une approche innovante, nous répondons aux besoins de santé les plus variés.
+Nos équipes de priere, hautement qualifiées, travaillent chaque jour avec professionnalisme et bienveillance pour assurer une prise en charge complète et personnalisée. Grâce à des équipements de pointe et à une approche innovante, nous répondons aux besoin de priere.
 
-Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des valeurs fortes : écoute, excellence, éthique et confiance.</p>
+Chez EDEN, nous plaçons l’humain au cœur de notre mission, avec des valeurs fortes : écoute, excellence, éthique et confiance.</p>
                   
                  
                </div>
@@ -200,7 +215,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
                <div class="col-lg-3 col-sm-6">
                   <h1 class="number_text">02</h1>
                   <h2 class="care_text">Chirurgie Générale</h2>
-                  <p class="treatment_text_1">La chirurgie générale regroupe plusieurs types d’interventions, notamment au niveau de l’abdomen (appendicite, hernie, vésicule biliaire) ou des tissus mous. Elle est assurée par des chirurgiens spécialisés selon les besoins du patient.</p>
+                  <p class="treatment_text_1">La chirurgie générale regroupe plusieurs types d’interventions, notamment au niveau de l’abdomen (appendicite, hernie, vésicule biliaire) ou des tissus mous. Elle est assurée par des chirurgiens spécialisés selon les besoins du Membre.</p>
                </div>
                <div class="col-lg-3 col-sm-6">
                   <h1 class="number_text">03</h1>
@@ -217,35 +232,35 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
          </div>
       </div>
       <!-- treatment section end -->
-      <!-- doctores section start -->
-      <div class="doctores_section">
+      <!-- membre section start -->
+      <div class="membre_section">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h1 class="doctores_taital">Nos spécialistes</h1>
+                  <h1 class="membre_taital">Nos spécialistes</h1>
                </div>
             </div>
-            <div class="doctores_section_2">
+            <div class="membre_section_2">
                <div id="my_slider" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                      <div class="carousel-item active">
                         <div class="row">
                            <div class="col-md-4">
-                              <div class="doctores_box">
+                              <div class="membre_box">
                                  <div class="image_1"><img src="images/IMG-1.jpg"></div>
                                  <h4 class="humour_text">Edner <br><span class="mbbs_text">Cardiologue</span></h4>
                                 
                               </div>
                            </div>
                            <div class="col-md-4">
-                              <div class="doctores_box">
+                              <div class="membre_box">
                                  <div class="image_1"><img src="images/img-2.png"></div>
                                  <h4 class="humour_text">Jonathan<br><span class="mbbs_text">Neurologue</span></h4>
                                  
                               </div>
                            </div>
                            <div class="col-md-4">
-                              <div class="doctores_box">
+                              <div class="membre_box">
                                  <div class="image_1"><img src="images/img-3.png"></div>
                                  <h4 class="humour_text">Djenou<br><span class="mbbs_text">Orthopédiste</span></h4>
                               </div>
@@ -255,7 +270,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
                      <div class="carousel-item">
                         <div class="row">
                            <div class="col-md-4">
-                              <div class="doctores_box">
+                              <div class="membre_box">
                                  <div class="image_1"><img src="images/IMG-1.jpg"></div>
                                  <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
                                  <div class="social_icon">
@@ -269,7 +284,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
                               </div>
                            </div>
                            <div class="col-md-4">
-                              <div class="doctores_box">
+                              <div class="membre_box">
                                  <div class="image_1"><img src="images/img-2.png"></div>
                                  <h4 class="humour_text">Jenni <br><span class="mbbs_text">MBBS</span></h4>
                                  <div class="social_icon">
@@ -283,7 +298,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
                               </div>
                            </div>
                            <div class="col-md-4">
-                              <div class="doctores_box">
+                              <div class="membre_box">
                                  <div class="image_1"><img src="images/img-3.png"></div>
                                  <h4 class="humour_text">Morco <br><span class="mbbs_text">MBBS</span></h4>
                                  <div class="social_icon">
@@ -301,7 +316,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
                      <div class="carousel-item">
                         <div class="row">
                            <div class="col-md-4">
-                              <div class="doctores_box">
+                              <div class="membre_box">
                                  <div class="image_1"><img src="images/IMG-1.jpg"></div>
                                  <h4 class="humour_text">Humour <br><span class="mbbs_text">MBBS</span></h4>
                                  <div class="social_icon">
@@ -315,7 +330,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
                               </div>
                            </div>
                            <div class="col-md-4">
-                              <div class="doctores_box">
+                              <div class="membre_box">
                                  <div class="image_1"><img src="images/img-2.png"></div>
                                  <h4 class="humour_text">Jenni <br><span class="mbbs_text">MBBS</span></h4>
                                  <div class="social_icon">
@@ -329,7 +344,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
                               </div>
                            </div>
                            <div class="col-md-4">
-                              <div class="doctores_box">
+                              <div class="membre_box">
                                  <div class="image_1"><img src="images/img-3.png"></div>
                                  <h4 class="humour_text">Morco <br><span class="mbbs_text">MBBS</span></h4>
                                  <div class="social_icon">
@@ -355,7 +370,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
             </div>
          </div>
       </div>
-      <!-- doctores section end -->
+      <!-- membre section end -->
       <!-- testimonial section start -->
       <div class="testimonial_section layout_padding">
          <div class="container">
@@ -457,7 +472,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
                         <ul>
                            <li>
                               <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                              <span class="padding_15">POWERFULMED</span></a>
+                              <span class="padding_15">EGLISE  EDEN</span></a>
                            </li>
                            <li>
                               <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
@@ -497,7 +512,7 @@ Chez POWERFULMED, nous plaçons l’humain au cœur de notre mission, avec des v
                               <a href="about.html">About</a>
                            </li>
                            <li>
-                              <a href="doctors.html">Doctors</a>
+                              <a href="pasteur.html">pasteur</a>
                            </li>
                            <li>
                               <a href="treatment.html">Treatment</a>
